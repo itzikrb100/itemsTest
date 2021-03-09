@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">MyMotivetionTestApp</string>
+    <string name="start_item_menu">Start</string>
+    <string name="stop_item_menu">Stop</string>
+</resources>

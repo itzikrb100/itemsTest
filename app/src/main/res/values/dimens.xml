@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="circle_w"> 56dp </dimen>
+    <dimen name="circle_h"> 56dp </dimen>
+    <dimen name="circle_cr"> 28dp </dimen>
+    <dimen name="container_h"> 82dp </dimen>
+    <dimen name="rectangle_w"> 226dp </dimen>
+    <dimen name="margin_row"> 10dp </dimen>
+    <dimen name="rectangle_shape_w"> 2dp </dimen>
+</resources>

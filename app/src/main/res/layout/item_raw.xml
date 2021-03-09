@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/container_h"
+    android:layout_marginBottom="@dimen/margin_row"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/circle"
+        android:layout_width="@dimen/circle_w"
+        android:layout_height="@dimen/circle_h"
+        app:cornerRadius="@dimen/circle_w"
+        android:layout_alignParentLeft="true">
+
+    </com.google.android.material.button.MaterialButton>
+
+    <LinearLayout
+        android:id="@+id/container"
+        android:layout_width="@dimen/rectangle_w"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:background="@drawable/rectangle"
+        android:layout_toRightOf="@+id/circle">
+
+        <TextView
+            android:id="@+id/title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@color/black"
+            android:background="@android:color/darker_gray">
+        </TextView>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:background="@color/black">
+        </View>
+
+        <TextView
+            android:id="@+id/wight"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@color/black">
+        </TextView>
+
+    </LinearLayout>
+
+<!--    <com.google.android.material.button.MaterialButton-->
+<!--        android:id="@+id/rectangle"-->
+<!--        android:layout_width="@dimen/rectangle_w"-->
+<!--        android:layout_height="match_parent"-->
+<!--        android:layout_toRightOf="@+id/circle">-->
+
+<!--    </com.google.android.material.button.MaterialButton>-->
+
+</RelativeLayout>

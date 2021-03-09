@@ -1,0 +1,60 @@
+// Top-level build file where you can add configuration options common to all sub-projects/modules.
+buildscript {
+    ext.kotlin_version = "1.3.72"
+    repositories {
+        google()
+        jcenter()
+    }
+    dependencies {
+        classpath "com.android.tools.build:gradle:3.5.3"
+        classpath "org.jetbrains.kotlin:kotlin-gradle-plugin:$kotlin_version"
+
+        // NOTE: Do not place your application dependencies here; they belong
+        // in the individual module build.gradle files
+    }
+}
+
+allprojects {
+    repositories {
+        google()
+        jcenter()
+    }
+}
+
+task clean(type: Delete) {
+    delete rootProject.buildDir
+}
+
+ext {
+    versions = [
+            compileSdk      : 29,
+            minSdk          : 27,
+            targetSdk       : 29,
+            buildTools      : '29.0.3',
+            coreKotlin      : '1.3.2',
+            appcompat       : '1.2.0',
+            meterial        : '1.3.0',
+            retrofit2       : '2.1.0',
+            gson            : '2.6.2',
+            okhttp3         : '3.6.0',
+            converter_gson  : '2.1.0',
+            lifecycle       : '2.2.0-alpha03',
+            recyclerview    : '1.2.0-alpha06',
+            gson : '2.8.2'
+            ]
+
+    libs = [
+             core_kotlin : "androidx.core:core-ktx:${versions.coreKotlin}",
+             support_compact : "androidx.appcompat:appcompat:${versions.appcompat}",
+             material  :  "com.google.android.material:material:${versions.meterial}",
+             retrofit2 : "com.squareup.retrofit2:retrofit:${versions.retrofit2}",
+             gson : "com.google.code.gson:gson:${versions.gson}",
+             converter_gson : "com.squareup.retrofit2:converter-gson:${versions.converter_gson}",
+             okhttp3 : "com.squareup.okhttp3:okhttp:${versions.okhttp3}",
+             interceptor : "com.squareup.okhttp3:logging-interceptor:${versions.okhttp3}",
+             livedata : "androidx.lifecycle:lifecycle-livedata-ktx:$versions.lifecycle",
+             modelView : "androidx.lifecycle:lifecycle-viewmodel-ktx:$versions.lifecycle",
+             recyclerview : "androidx.recyclerview:recyclerview:${versions.recyclerview}",
+             gson : "com.google.code.gson:gson:${versions.gson}"
+            ]
+}
